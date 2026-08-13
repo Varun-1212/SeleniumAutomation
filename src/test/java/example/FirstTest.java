@@ -31,8 +31,7 @@ public class FirstTest {
             else {
                 System.out.println("The Title's are diffferent");
             }
-        }
-        catch (Exception e)
+        }catch (Exception e)
         {
             e.printStackTrace();
         }
