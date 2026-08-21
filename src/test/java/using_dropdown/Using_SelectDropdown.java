@@ -21,6 +21,11 @@ public class Using_SelectDropdown {
             WebElement dropdown=driver.findElement(By.cssSelector("select#dropdown"));
             Select s=new Select(dropdown);
             s.selectByVisibleText("Option 1");
+            List<WebElement> allOptions=s.getOptions();
+            for (WebElement ele:allOptions)
+            {
+                System.out.println(ele.getText());
+            }
             System.out.println(s.isMultiple());
         }
         catch (Exception e)
